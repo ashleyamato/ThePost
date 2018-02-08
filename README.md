@@ -26,7 +26,28 @@ $ yarn start
 ```
 4. A browser should open http://localhost:3000/
 
-## Navigating the site
+## Navigating the Site
 
 Articles populate the home page and are organized by most trending (a combination of likes and views). A user can filter articles by sport.
-(images/home.png)
+![alt text](images/home.png)
+To submit an article, user can navigate to the sign up or login pages.
+![alt text](images/login.png)
+After logging in, the user can read submission guidelines and fill out a form with their editorial content. Their submission will automatically populate on the home page.
+![alt text](images/submit.png)
+If the user is a designated administrator, they can enter the admin dashboard and view all site users. They can delete articles as well as delete users.
+![alt text](images/admin.png)
+
+## Project Planning
+
+Task Management:
+https://trello.com/b/KntLXos7/profile
+
+Entity Relationship Diagram
+![alt text](images/erd.png)
+
+## Team Members
+* [Olivia Burgener](https://github.com/oaburgener)
+* [Rob Quan](https://github.com/TheRobQ)
+* [Eddie Marovich](https://github.com/eddiemarovich)
+* [Brent Shroder](https://github.com/Brumpo)
+* [Tim Jackson](https://github.com/Mirtau)
