@@ -7,6 +7,7 @@ class SignUp extends React.Component {
     super(props)
     this.handleSubmit = this.handleSubmit.bind(this)
   }
+
   handleSubmit(event) {
     event.preventDefault()
     var data = {firstName: this.refs.first_name.value, lastName: this.refs.last_name.value, email: this.refs.email.value, password: this.refs.password.value}
@@ -33,8 +34,6 @@ class SignUp extends React.Component {
       <label className="login-small-text" htmlFor="username">Password</label>
       <input id="username" ref = "password" name="username" type="password" required/>
 
-
-
       <button id="signup-button" label="Submit">Submit</button>
 
     </form>}
@@ -46,7 +45,7 @@ class SignUp extends React.Component {
       </div>: null}
 
     </div>
-  )
+    )
   }
 
 }

@@ -3,6 +3,7 @@ import '../index.css';
 import React, { Component } from 'react';
 import { getBySport } from '../actions/actions_index.js'
 import { getArticles } from '../actions/actions_index.js'
+
 class Filters extends Component {
   constructor(props) {
     super(props)

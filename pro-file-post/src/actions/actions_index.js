@@ -12,7 +12,6 @@ export const UNAUTHORIZED = 'UNAUTHORIZED'
 export const SIGNUP = 'SIGNUP'
 export const GET_COOKIE = 'GET_COOKIE'
 
-
 export const getArticles = () => {
 
   return async (dispatch) => {
@@ -21,7 +20,7 @@ export const getArticles = () => {
     const trending =  json.data.sort(function(a,b){
       return (b.likes + b.views) - (a.likes + a.views)
     }).slice(0,2)
-    
+
     dispatch({
       type: GET_ARTICLES,
       data:json.data,

@@ -7,8 +7,6 @@ import DeleteArticle from './DeleteArticle'
 import {getArticles} from '../actions/actions_index.js'
 import{delArticle} from '../actions/actions_index.js'
 
-
-
 class Admin extends Component {
   constructor(props){
     super(props)
@@ -19,7 +17,6 @@ class Admin extends Component {
     this.props.getUsers()
     this.props.getArticles()
   }
-
 
   render(){
     return (

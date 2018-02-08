@@ -3,7 +3,6 @@ import '../index.css';
 import { Grid, Row, Col, Image } from 'react-bootstrap'
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 
-
 const LargePics = ({article, getArticleId}) => {
   return (
     <Col sm={12} md={6} lg={6} style={{paddingLeft: "4px", paddingRight: "4px", marginBottom:'25px'}}>

@@ -20,6 +20,4 @@ const DeleteArticle = ({article, delArticle, getArticles}) => {
     )
 }
 
-
-
 export default DeleteArticle

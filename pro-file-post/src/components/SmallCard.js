@@ -8,7 +8,6 @@ import {Card, CardActions, CardHeader, CardMedia, CardTitle, CardText} from 'mat
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 import{Grid, Row, Col, Image} from 'react-bootstrap'
 
-
 const SmallCard = ({article, getArticleId}) => {
 
   return (
@@ -30,11 +29,5 @@ const SmallCard = ({article, getArticleId}) => {
         </Card>
       </Col>    )
       }
-
-
-
-
-
-
 
 export default SmallCard;

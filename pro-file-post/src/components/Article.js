@@ -1,8 +1,6 @@
 import React, { Component } from 'react'
 import { Grid, Row, Col, Image } from 'react-bootstrap'
 
-
-
 class Article extends Component {
   constructor(props){
     super(props)

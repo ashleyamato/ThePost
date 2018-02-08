@@ -7,6 +7,7 @@ class Login extends React.Component {
     super(props)
     this.handleSubmit = this.handleSubmit.bind(this)
   }
+
   handleSubmit(event) {
     event.preventDefault()
     var data = {email: this.refs.email.value, password: this.refs.password.value}
@@ -39,7 +40,7 @@ class Login extends React.Component {
       </div> : null}
 
     </div>
-  )
+    )
   }
 
 }

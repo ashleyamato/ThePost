@@ -8,7 +8,6 @@ const recentsIcon = <FontIcon className="material-icons">restore</FontIcon>;
 const favoritesIcon = <FontIcon className="material-icons">favorite</FontIcon>;
 const nearbyIcon = <IconLocationOn />;
 
-
 class BottomNavigationExampleSimple extends Component {
 
   render() {

@@ -7,8 +7,6 @@ import DeleteArticle from './DeleteArticle'
 import {getArticles} from '../actions/actions_index.js'
 import {delArticle} from  '../actions/actions_index.js'
 
-
-
 const UserCard = ({ user, getUsers, article, delUser, all_articles, delArticle}) => {
 
   return (
@@ -35,4 +33,4 @@ const UserCard = ({ user, getUsers, article, delUser, all_articles, delArticle})
 
 
 
-export default UserCard;
+export default UserCard
