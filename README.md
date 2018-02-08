@@ -16,6 +16,8 @@ $ git clone https://github.com/ashleyamato/ThePost.git
 ```
 $ cd react-backend
 $ yarn install
+$ createdb thepost
+$ knex migrate:latest && knex seed:run
 $ nodemon
 ```
 3. Install dependencies and start in './pro-file-post'
