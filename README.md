@@ -29,21 +29,39 @@ $ yarn start
 ## Navigating the Site
 
 Articles populate the home page and are organized by most trending (a combination of likes and views). A user can filter articles by sport.
+
 ![alt text](images/home.png)
+
 To submit an article, user can navigate to the sign up or login pages.
+
 ![alt text](images/login.png)
+
 After logging in, the user can read submission guidelines and fill out a form with their editorial content. Their submission will automatically populate on the home page.
+
 ![alt text](images/submit.png)
+
 If the user is a designated administrator, they can enter the admin dashboard and view all site users. They can delete articles as well as delete users.
+
 ![alt text](images/admin.png)
 
 ## Project Planning
 
-Task Management:
-https://trello.com/b/KntLXos7/profile
+Task Management: https://trello.com/b/KntLXos7/profile
+
+Wireframes: https://drive.google.com/open?id=1C3xIMhnjJHsk-MNqIEeKczTdo2P5t8qg
 
 Entity Relationship Diagram
 ![alt text](images/erd.png)
+
+## Technologies
+
+* Javascript/ES6
+* HTML / CSS
+* Material UI
+* React & Redux
+* Express
+* Knex
+* PostgresQL
 
 ## Team Members
 * [Olivia Burgener](https://github.com/oaburgener)
