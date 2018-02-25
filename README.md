@@ -1,8 +1,8 @@
 # The Post
 
-[The Post](https://theprofilepost.herokuapp.com/) hosts sports-related editorial articles where athletes can submit content to be published. Athletes can share their thoughts and experiences, struggles and wins with a community of fellow sports enthusiasts.
+[The Post](https://theprofilepost.herokuapp.com/) is a full-stack application that hosts sports-related editorial articles where athletes can also submit content to be published. The purpose of the Post is for athletes to share their thoughts and experiences, struggles and wins with a community of fellow sports enthusiasts. The application features the ability to filter articles by sport, publish an article, as well as an admin dashboard where articles and users can be deleted.
 
-The Post is intended to be an addition to [PRO-FILE](http://pro-file.us/#/), a website that connects athletes and teams to foster networking and professional opportunities.
+The Post was created as an addition to [PRO-FILE](http://pro-file.us/#/), a website that connects athletes and teams to foster networking and professional opportunities..
 
 ## Getting Started
 
@@ -40,7 +40,7 @@ To submit an article, user can navigate to the sign up or login pages.
 
 After logging in, the user can read submission guidelines and fill out a form with their editorial content. Their submission will automatically populate on the home page.
 
-![alt text](images/submit.png)
+![alt text](images/submitform.png)
 
 If the user is a designated administrator, they can enter the admin dashboard and view all site users. They can delete articles as well as delete users.
 
@@ -58,12 +58,13 @@ Entity Relationship Diagram
 ## Technologies
 
 * Javascript/ES6
-* HTML / CSS
+* HTML
+* CSS
 * Material UI
 * React & Redux
 * Express
 * Knex
-* PostgresQL
+* PostgreSQL
 
 ## Team Members
 * [Olivia Burgener](https://github.com/oaburgener)
