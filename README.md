@@ -34,6 +34,8 @@ Articles populate the home page and are organized by most trending (a combinatio
 
 ![alt text](images/homepage.png)
 
+Articles are displayed in an easy-to-read format.
+
 ![alt text](images/article.png)
 
 To submit an article, user can navigate to the sign up or login pages.
