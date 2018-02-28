@@ -28,14 +28,11 @@ import FormContainer from './containers/FormContainer'
 import NavContainer from './containers/NavContainer'
 import DeleteArticle from './components/DeleteArticle.js'
 
-
-
 class App extends Component {
 
   componentDidMount() {
     this.props.getArticles()
   }
-
 
   render() {
     return (
@@ -97,7 +94,6 @@ class App extends Component {
           </MuiThemeProvider>
       </div>
     </Router>
-
     )
   }
 }

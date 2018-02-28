@@ -30,5 +30,4 @@ class Admin extends Component {
   }
 }
 
-
 export default Admin

@@ -4,7 +4,6 @@ import Footer from './Footer'
 
 const About = () => {
 
-
   return (
   <div className='about-container'>
     <h1 className= "about-title">About PRO-FILE & The Post</h1>

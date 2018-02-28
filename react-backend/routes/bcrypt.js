@@ -35,6 +35,7 @@ const compare = (req,res,sendit)=>{
   .catch(err=>{next(err)})
   })
 }
+
 module.exports = {
   store,
   compare

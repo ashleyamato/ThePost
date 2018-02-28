@@ -9,4 +9,5 @@ const Jumbotron = ({trending_articles, getArticleId }) => {
       </div>
   )
 }
+
 export default Jumbotron

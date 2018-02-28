@@ -27,7 +27,8 @@ const SmallCard = ({article, getArticleId}) => {
             </CardMedia>
           </Link>
         </Card>
-      </Col>    )
-      }
+      </Col>
+  )
+}
 
 export default SmallCard;

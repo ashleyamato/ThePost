@@ -3,12 +3,6 @@ import {
   LOGIN,
 } from '../actions/actions_index'
 
-// const getInitialState = {
-//   let cookie = document.cookie
-//   if(cookie){
-//   }
-// }
-
 var initialState = {
   toast:false,
   token: false,

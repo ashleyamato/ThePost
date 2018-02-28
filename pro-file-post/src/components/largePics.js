@@ -20,4 +20,5 @@ const LargePics = ({article, getArticleId}) => {
     </Col>
   )
 }
+
 export default LargePics

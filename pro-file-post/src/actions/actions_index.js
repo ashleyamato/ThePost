@@ -211,8 +211,8 @@ export const logInVerify = (user) =>{
 }
 
 export const SignUpVerify = (user) =>{
-let body = JSON.stringify(user)
-return async (dispatch) =>{
+  let body = JSON.stringify(user)
+  return async (dispatch) =>{
     const response = await fetch('http://localhost:3001/users/',{
       method: 'POST',
       headers: {
@@ -227,4 +227,4 @@ return async (dispatch) =>{
        data: true
     })
   }
-  }
+}

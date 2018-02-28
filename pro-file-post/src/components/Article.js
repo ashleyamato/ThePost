@@ -15,7 +15,6 @@ class Article extends Component {
     this.props.getArticleId( window.location.href.split('/')[window.location.href.split('/').length-1])
   }
 
-
   render(){
     return (
     <div className= 'article-container' style={{marginTop:'38px'}}>

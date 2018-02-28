@@ -19,7 +19,7 @@ const titleStyle={
   fontSize:'30px'
 }
 
-const toolbar={
+const toolbar = {
   zIndex: '9',
   position:'fixed',
   top:'0',
@@ -30,14 +30,14 @@ const toolbar={
   height: '69px'
 }
 
-const toolImage={
+const toolImage = {
   maxHeight: '45px',
   maxWidth: 'auto',
   paddingLeft: '24px',
   marginTop:'-23px',
 }
 
-const logo={
+const logo = {
   display: 'inline-block',
   fontFamily:"Lato Regular",
   fontFamily:"Helvetica Neue",
@@ -55,12 +55,9 @@ export default class Navbar extends React.Component {
     this.state = {
       value: 3
     };
-
   }
 
   handleChange = (event, index, value) => this.setState({value});
-
-
 
   render() {
     return (

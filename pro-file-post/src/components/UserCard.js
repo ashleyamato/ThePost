@@ -28,9 +28,7 @@ const UserCard = ({ user, getUsers, article, delUser, all_articles, delArticle})
         </Col>
       </Row>
     </Grid>
-    )
+  )
 }
-
-
 
 export default UserCard
