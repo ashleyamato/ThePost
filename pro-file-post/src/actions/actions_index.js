@@ -6,7 +6,7 @@ export const GET_ONE_ARTICLE = 'GET_ONE_ARTICLE'
 export const DELETE_USER = 'DELETE_USER'
 export const GET_USERS = 'GET_USERS'
 export const DELETE_ARTICLE = 'DELETE_ARTICLE'
-export const CREATE_ARTICLE='CREATE_ARTICLE'
+export const CREATE_ARTICLE = 'CREATE_ARTICLE'
 export const LOGIN = 'LOGIN'
 export const UNAUTHORIZED = 'UNAUTHORIZED'
 export const SIGNUP = 'SIGNUP'
@@ -17,20 +17,19 @@ export const getArticles = () => {
   return async (dispatch) => {
     const response = await fetch('http://localhost:3001/articles/')
     const json = await response.json()
-    const trending =  json.data.sort(function(a,b){
+    const trending =  json.data.sort(function(a, b) {
       return (b.likes + b.views) - (a.likes + a.views)
-    }).slice(0,2)
+    }).slice(0, 2)
 
     dispatch({
       type: GET_ARTICLES,
-      data:json.data,
+      data: json.data,
       trending: trending
     })
- }
+  }
 }
 
-
-export const getBySport = (sport)=> {
+export const getBySport = (sport) => {
   return async (dispatch) => {
     const response = await fetch(`http://localhost:3001/articles/filter/${sport}`)
     const json = await response.json()
@@ -45,14 +44,13 @@ export const getBySport = (sport)=> {
 }
 
 export const getArticleId = (id) => {
-
   return async (dispatch) => {
     const response = await fetch(`http://localhost:3001/articles/${id}`,{
       headers: {
         'Content-Type': 'application/json',
         'Accept': 'application/json',
       },
-        credentails : 'include'
+      credentials: 'include'
     })
     const json = await response.json()
     const body = json.data.body.split('\n')
@@ -65,7 +63,6 @@ export const getArticleId = (id) => {
 }
 
 export const delArticle = (id) => {
-
   return async (dispatch) => {
     let cookie = document.cookie
     const response = await fetch(`http://localhost:3001/articles/${id}`,{
@@ -76,13 +73,13 @@ export const delArticle = (id) => {
         'Accept': 'application/json',
         'cooker': cookie
       },
-      credentails : 'include'
+      credentials: 'include'
     })
-    if(response.status==403){
+    if (response.status === 403) {
       dispatch({
-        type: 'jwtsaysno',
+        type: 'jwtsaysno'
       })
-    }else{
+    } else {
       let remaining = store.getState().admin.all_articles.filter(e => e.id !== id)
       dispatch({
         type: DELETE_ARTICLE,
@@ -95,23 +92,23 @@ export const delArticle = (id) => {
 export const getUsers = () => {
   return async (dispatch) => {
     let cookie = document.cookie
-    const response = await fetch ('http://localhost:3001/users/',{
+    const response = await fetch('http://localhost:3001/users/',{
       headers: {
         'Content-Type': 'application/json',
         'Accept': 'application/json',
-        'cooker' : cookie,
+        'cooker': cookie
       },
-      credentails : 'include'
+      credentails: 'include'
     })
     const json = await response.json()
-    if(response.status===403){
+    if (response.status === 403) {
       dispatch({
-        type: 'jwtsaysno',
+        type: 'jwtsaysno'
       })
-    }else{
+    } else {
       dispatch({
         type: GET_USERS,
-        data: json.data,
+        data: json.data
       })
     }
   }
@@ -126,15 +123,15 @@ export const delUser = (id) => {
       headers: {
         'Content-Type': 'application/json',
         'Accept': 'application/json',
-        'cooker' : cookie,
+        'cooker': cookie
       },
-      credentails : 'include'
+      credentials: 'include'
     })
-    if(response.status===403){
+    if (response.status === 403) {
       dispatch({
-        type: 'jwtsaysno',
+        type: 'jwtsaysno'
       })
-    }else{
+    } else {
       let remaining = store.getState().admin.all_users.filter(e => e.id !== id)
       dispatch({
         type: DELETE_USER,
@@ -152,7 +149,12 @@ export const createArticle = (id) => {
   let sport = document.getElementById('dropdown').value
   let image = document.getElementById('image').value
 
-  let body = {user_id: id ,title:title, summary:summary, body:articleBody, sport:sport, image_url:image}
+  let body = {user_id: id,
+    title: title,
+    summary: summary, 
+    body: articleBody,
+    sport: sport,
+    image_url:image}
   let bitchinbod = JSON.stringify(body)
   let cookie = document.cookie
   return async (dispatch) => {
